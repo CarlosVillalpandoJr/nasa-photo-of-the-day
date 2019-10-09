@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Photo(props) {
+export default function Photo( {image} ) {
 return (
     <div>
-        <img src='' alt='NASA Photo of the Day' />
+        <img src={image} alt='NASA Photo of the Day' />
     </div>
     )
 }
