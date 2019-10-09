@@ -16,7 +16,7 @@ Commit your code regularly and meaningfully. This helps both you and your team l
 
 In this project you will build out a application to show the nasa photo of the day.
 
-## Project Set Up
+## Project Set Up - Complete 
 
 ---
 
