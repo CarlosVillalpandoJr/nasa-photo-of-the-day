@@ -1,4 +1,7 @@
 import React from "react";
+import axios from 'axios';
+import Photo from './components/Photo';
+import PhotoInfo from './components/PhotoInfo'
 import "./App.css";
 
 function App() {
