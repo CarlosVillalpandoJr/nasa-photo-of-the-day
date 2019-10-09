@@ -3,7 +3,7 @@ import axios from 'axios';
 import Photo from './components/Photo';
 import PhotoInfo from './components/PhotoInfo'
 import "./App.css";
-
+ 
 function App() {
   const [photoData, setPhotoData] = useState([])
   const [date, setDate] = useState('')
