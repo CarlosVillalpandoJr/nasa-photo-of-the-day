@@ -6,10 +6,11 @@ import "./App.css";
 
 function App() {
   const [photoData, setPhotoData] = useState([])
+  const [date, setData] = useState('')
 
   useEffect(() => {
     axios
-      .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
+      .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${date}`)
       .then(res => setPhotoData(res.data))
       .catch(error => {
         console.log('The data was not returned', error)
