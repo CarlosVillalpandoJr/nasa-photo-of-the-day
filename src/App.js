@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   const [photoData, setPhotoData] = useState([])
-  const [date, setData] = useState('')
+  const [date, setDate] = useState('')
 
   useEffect(() => {
     axios
@@ -15,14 +15,19 @@ function App() {
       .catch(error => {
         console.log('The data was not returned', error)
       })
-    }, [])
+    }, [date])
     
-    console.log(photoData)
+    const handleClick = (e) => {
+      console.log(e.target.value)
+      setDate(e.target.value)
+    }
+
   return (
     <div className="App">
       <h1>NASA PHOD</h1>
       <Photo image={photoData.url} /> 
       <PhotoInfo title={photoData.title} explanation={photoData.explanation}/>
+      <input type='date' name='Photo Date' onClick={handleClick}/>
     </div>
   );
 }
